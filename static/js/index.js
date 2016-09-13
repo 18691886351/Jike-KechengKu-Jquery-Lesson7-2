@@ -50,4 +50,45 @@ $(document).ready(function() {
     $(".pager .content .right-list .title .nav .item").mouseout(function() {
         $(this).children(".submenu").hide();
     })
+
+
+    /*.hot-lessionbox ul li .lession-header mouseover与mouseout事件*/
+    $(".pager .content .right-list .lession-list li .lession-header .lessionplay-back").mouseover(function(){
+        $(this).css({"opacity":"1"});
+    })
+
+    $(".pager .content .right-list .lession-list li .lession-header .lessionplay-back").mouseout(function(){
+        $(this).css({"opacity":"0"});
+    })
+
+    /*
+    .hot-lessionbox ul li .lession-info
+    鼠标在mouseover其中一个lession时,显示level_info和numberinfo,文字段落向下滑动
+    鼠标在mouseout其中一个lession时,隐藏level_info和numberinfo，文字段落向上收起
+    */
+    $(".lession-list li .lession-info").each(function() {
+        $(this).mouseover(function() {
+            $(this).children(".timeandlevel").children(".level-info").show();
+            $(this).children(".timeandlevel").children(".number-info").show();
+            /*if (!$(this).children("p").is(":animated")) {
+                $(this).children("p").slideDown();
+            }*/
+            if ($(this).children("p").is(":animated")) {
+                $(this).children("p").stop();
+            }
+            $(this).children("p").slideDown("fast");
+        });
+        $(this).mouseout(function() {
+            $(this).children(".timeandlevel").children(".level-info").hide();
+            $(this).children(".timeandlevel").children(".number-info").hide();
+            /* 
+            if (!$(this).children("p").is(":animated")) {
+                            $(this).children("p").slideUp();
+            }*/
+            if ($(this).children("p").is(":animated")) {
+                $(this).children("p").stop();
+            }
+            $(this).children("p").slideUp("fast");
+        });
+    });
 })
