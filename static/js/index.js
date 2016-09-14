@@ -91,4 +91,14 @@ $(document).ready(function() {
             $(this).children("p").slideUp("fast");
         });
     });
+
+    /*点击后，lession的列表格式发生变化*/
+    $("#kuai-btn").click(function(){
+
+    })
+
+    /*点击后，lession的列表list还原*/
+    $("#list-btn").click(function(){
+
+    })
 })

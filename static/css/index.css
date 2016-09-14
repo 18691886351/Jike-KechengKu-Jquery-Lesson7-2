@@ -797,6 +797,7 @@ background-size: 6px 10px; */
     width: 70px;
     display: none;
     box-shadow: 1px 3px 3px rgba(0, 0, 0, .2);
+    z-index: 2000;
 }
 
 .pager .content .right-list .title .nav .item .submenu a {
@@ -882,8 +883,7 @@ background-size: 6px 10px; */
     background-size: 100% 100%;
 }
 
-.pager .content .right-list .lession-list li .lession-header .rz-icon
-{
+.pager .content .right-list .lession-list li .lession-header .rz-icon {
     background: url(http://s1.jikexueyuan.com/common/images/tag_rz_5a84337.png) 0 0 no-repeat;
     background-size: 100% 100%;
     width: 60px;
@@ -951,6 +951,9 @@ background-size: 6px 10px; */
     display: none;
 }
 
+/*课程列表平铺方式begin*/
+
+/*课程列表平铺方式end*/
 .pager .content .right-list .lession-list li .lession-info .timeandlevel {
     position: relative;
 }
@@ -1021,6 +1024,267 @@ background-size: 6px 10px; */
 .pager .content .right-list .lession-list li .lession-info .level-info .level-text {
     font-size: 12px;
     color: gray;
+}
+
+.pager .content .right-list .page-nav {
+    margin-top: 20px;
+    height: 28px;
+}
+
+.pager .content .right-list .page-nav ul.pages li {
+    display: block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    margin-left: 5px;
+    line-height: 30px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 12px;
+    background: #fff;
+    color: gray;
+    border: 1px solid #e4e4e4;
+}
+
+.pager .content .right-list .page-nav ul.pages li.page-number {
+    cursor: pointer;
+}
+
+.pager .content .right-list .page-nav ul.pages li.pgFirst {
+    width: 50px;
+    border: 1px solid #f0f0f0;
+    color: #d9d6c3;
+    cursor: default;
+}
+
+.pager .content .right-list .page-nav ul.pages li.pgPrev {
+    width: 70px;
+    border: 1px solid #f0f0f0;
+    color: #d9d6c3;
+    cursor: default;
+}
+
+.pager .content .right-list .page-nav ul.pages li.pgNext {
+    width: 50px;
+    border: 1px solid #f0f0f0;
+    color: #d9d6c3;
+    cursor: default;
+}
+
+.pager .content .right-list .page-nav ul.pages li.pgLast {
+    width: 50px;
+    border: 1px solid #f0f0f0;
+    color: #d9d6c3;
+    cursor: default;
+}
+
+.pager .content .right-list .page-nav ul.pages li.pgConfirm {
+    color: #000;
+    width: 50px;
+}
+
+.pager .content .right-list .page-nav ul.pages span {
+    display: block;
+    float: left;
+    font-size: 12px;
+    height: 32px;
+    line-height: 30px;
+    margin: 0 5px;
+}
+
+.pager .content .right-list .page-nav ul.pages span.pagenow input {
+    width: 20px;
+    padding-left: 10px;
+    margin: 0 5px;
+}
+
+.pager .footer {
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.footer .jkinfor {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top:20px;
+    min-height: 200px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.footer .jkinfor .jk-logo {
+    float: left;
+    display: inline-block;
+    width: 160px;
+}
+
+.footer .jkinfor .jk-logo p{
+	margin-top: 20px;
+	font-size:12px;
+	color: gray;
+}
+
+.footer .jkinfor .jk-logo img {
+    width: 109px;
+    height: 40px;
+    display: block;
+}
+
+.footer .jkinfor dl {
+    width: 120px;
+    color: gray;
+    margin: 25px 0;
+    float: left;
+    min-height: 175px;
+}
+
+.footer .jkinfor dl dt {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+.footer .jkinfor dl dd {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.footer .jkinfor a {
+    color: gray;
+    padding-left: 5px;
+}
+
+.footer .search-share {
+    width: 260px;
+    float: left;
+    min-height: 226px;
+    padding: 20px 0 0 40px;
+}
+
+.footer .search-share .jktxt {
+    font-size: 15px;
+    color: #35b558;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.footer .search-share .app-download a {
+    display: block;
+}
+
+.footer .search-share .app-download img {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    width: 21px;
+    vertical-align: middle;
+}
+
+.footer .search-share .app-download strong {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.footer .search-share .app-download p {
+    font-size: 14px;
+    color: gray;
+    background: url(http://s1.jikexueyuan.com/common/images/more-icon_d39346f.png) 160px center no-repeat;
+    background-size: 7px 13px;
+}
+
+.footer .search-share .share {
+    margin-top: 15px;
+}
+
+.footer .search-share .share a {
+    background: url(http://s1.jikexueyuan.com/common/images/icon_7f8b929.png) -23px 0 no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.footer .search-share .share a.sina-icon {
+    background-position: -23px 0;
+}
+
+.footer .search-share .share a.tieba-icon {
+    background-position: -145px 0;
+}
+
+.footer .search-share .share a.qq-icon {
+    background-position: -23px -82px;
+}
+
+.footer .search-share .share a.qq-icon .weinxinpop {
+    position: absolute;
+    bottom: 32px;
+    left: -48px;
+    z-index: 200;
+    display: none;
+}
+
+.footer .search-share .share a.qq-icon:hover .weinxinpop {
+    display: block;
+}
+
+.footer .kefu-online {
+    margin-top: 15px;
+    padding-left: 35px;
+}
+
+.footer .kefu-online .apply {
+    display: block;
+}
+
+
+/*在选则一个有两个类的元素 可以类似.kefu-icon.online*/
+
+.footer .kefu-online .kefu-icon.online {
+    background-position: 0 0;
+}
+
+.footer .kefu-online .kefu-icon {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: -40px;
+    background: url(http://s1.jikexueyuan.com/common/images/kefu_8edc734.png) no-repeat -40px 0/80px 40px;
+}
+
+.footer .kefu-online h5 {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 2px;
+    line-height: 22px;
+    padding-left: 5px;
+}
+
+.footer .kefu-online p {
+    color: gray;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.footer .copyright {
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 20px
+}
+
+.footer .copyright a {
+    color: #999;
+}
+
+.footer .copyright strong {
+    font-weight: 400;
 }
 
 
